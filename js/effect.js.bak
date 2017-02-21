@@ -260,7 +260,7 @@ function left_effect(aa) {
 		
 		if(b>a+150-d){
 			left_show($(this));
-			/***************************back事件***********************************/
+			
 		}else{
 			left_back($(this));
 			

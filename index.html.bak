@@ -6,7 +6,7 @@
 <meta name="keywords" content="亵玩 VR 亵玩官网 亵玩VR"/>
 <link href="css/css_1.css" rel="stylesheet">
 </head>
-<body style="overflow-x:hidden">
+<body style="">
 <div id="loading">
 	<div class="loading"></div>
 </div>
@@ -40,7 +40,7 @@
 
 <div id="count1">
 <div id="left_lead">
-	<div id="z_theme"><p onselectstart="return false">主题周</p></div>
+	<div id="z_theme" class="active"><p onselectstart="return false">主题周</p></div>
 	<div id="z_news"><p onselectstart="return false">产品资讯</p></div>
 	<div id="z_shop"><p onselectstart="return false">潮品购</p></div>
 	<div id="z_plan"><p onselectstart="return false">极客计划</p></div>
@@ -494,7 +494,7 @@
 				<p>同时解决渲染问题、画面延时和追踪速度，让虚拟世界更具真实感</p>
 				<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
 			</div>
-			<div class="day_2 day_right">
+			<div class="day_2 day_right" >
 				<img src="img/产品资讯/白框-右文字对话框.png">
 				<div><img src="img/首页图片/(9).png"/></div>
 				<h3>VR 游戏玩太久会怎样？玩家亲述恍如隔世的 “现实丧失感”</h3>
@@ -741,7 +741,7 @@
 				<p>陈小平说自己是个理性的人，39岁出来创业并不是残存的荷尔蒙作祟，也不是为了捞一笔就走的。但是总之，就是自己是想、、、</p>
 				<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
 			</div>
-			<div class="day_2 day_right">
+			<div class="day_2 day_right" style="display:none">
 				<img src="img/产品资讯/白框-右文字对话框.png">
 				<div><img src="img/极客计划_零件/第四页_0003_张小龙.png"/></div>
 				<h3>张小龙最新内部演讲：警惕KPI和流程</h3>
