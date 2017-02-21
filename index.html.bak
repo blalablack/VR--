@@ -1,0 +1,824 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+<title>亵玩</title>
+<meta charset="utf-8"/>
+<meta name="keywords" content="亵玩 VR 亵玩官网 亵玩VR"/>
+<link href="css/css_1.css" rel="stylesheet">
+</head>
+<body style="overflow-x:hidden">
+<div id="loading">
+	<div class="loading"></div>
+</div>
+<div id="title_bg"></div>
+<div class="windowb windowb10"></div>
+<div class="windowb windowb20"></div>
+<div id="title">
+	<div id="top_lead">
+		<h3 id="lead1"><a>首页</a></h3>
+		<p>|</p>
+		<h3 id="lead2"><a>产品资讯</a></h3>
+		<p>|</p>
+		<h3 id="lead3"><a>潮品购</a></h3>
+		<p>|</p>
+		<h3 id="lead4"><a>极客计划</a></h3>
+		<p>|</p>
+		<h3 id="lead5"><a>联系我们</a></h3>
+		<div id="arrow"></div>
+	</div>
+	<img src="img/主题周/标头.png" id="title_img" class="trans5"/>
+	<img src="img/主题周/搜索框.png" id="search11"/>
+	<img src="img/主题周/搜索框.png" id="search1" />
+	<img src="img/主题周/搜索键.png" id="search2" />
+	<img src="img/主题周/1.png" id="logo1" class="trans20"/>
+	<img src="img/主题周/2.png" id="logo2" class="trans20"/>
+	<img src="img/主题周/0.png" id="logo0"/>
+	<div id="search3"></div>
+	<input type="text" class="input"/>
+</div>
+<div style="width:1366px;margin:0 auto;position:relative;">
+
+<div id="count1">
+<div id="left_lead">
+	<div id="z_theme"><p onselectstart="return false">主题周</p></div>
+	<div id="z_news"><p onselectstart="return false">产品资讯</p></div>
+	<div id="z_shop"><p onselectstart="return false">潮品购</p></div>
+	<div id="z_plan"><p onselectstart="return false">极客计划</p></div>
+	<div id="z_connect"><p onselectstart="return false">联系我们</p></div> 
+</div>
+<div id="theme">
+	<div id="theme_word" class="trans5">
+		<img src="img/主题周/未标题-3_0006_主题周.png"/>
+		<hr/>
+		<h2>今年是VR元年</h2>
+		<hr style="width:44%"/>
+		<p>
+			目前，还有很大一部分人对VR不了解，<br/>
+			有些人甚至还没有听说过，让亵玩来带你<br/>
+			了解时下最火的vr技术。<br/>
+			虚拟现实技术(VR)主要包括模拟环境、感<br/>
+			知、自然技能和传感设备等方面。是仿真<br/>
+			技术的一个重要方向是仿真技术与计算机<br/>
+			图形学人机接口技术多媒体技术传感技术<br/>
+			网络技术等多种技术的集合是一门富有挑<br/>
+			战性研究领域。
+		</p>
+	</div>
+	<div id="theme_img" class="trans5">
+		<div id="theme_img_1" class="theme_img_now"></div>
+		<div id="theme_img_2" class="theme_img_left"></div>
+		<div id="theme_img_3" class="theme_img_left"></div>
+		<div id="theme_img_4" class="theme_img_left"></div>
+	</div>
+	<img id="theme_img1" class="trans20" src="img/主题周/未标题-3_0005_密线.png"/>
+	<img id="theme_img2" class="trans20" src="img/主题周/未标题-3_0004_疏线.png"/>
+	<div id="theme_circle">
+		<div id="theme_circle_1" class="circled trans5"></div>
+		<div id="theme_circle_2" ></div>
+		<div id="theme_circle_3" ></div>
+		<div id="theme_circle_4" ></div>
+	</div>
+	<div id="theme_next">
+		<img class="trans5" id="theme_next_left"  src="img/主题周/未标题-3_0000_左右标.png"/>
+		<img class="trans5" id="theme_next_right" src="img/主题周/未标题-3_0000_左右标.png"/>
+	</div>
+</div>	
+<div id="news" >
+	<img  class="cut" src="img/产品资讯/最新文章和长杠.png">
+	<div id="news_kong"></div>
+	<div id="news_title">VR主题</div>
+	<div id="hr">
+		<hr width="3%" style="margin:0 auto;" />
+	</div>
+	<div id="news_title2">头条</div>
+	<div id="news_img">
+		<img src="img/首页图片/(11).png"/>
+		<p class="wordFloat3">突破百万用户大关</p>
+		<p class="wordFloat4">Gear VR 接下来该怎么走？</p>
+		<div id="news_img_xiang">阅读详情</div>
+		<div style="position:absolute;top:250px;left:80px;">
+			<div class="lap_l1_div" style="top:0;left:0">
+				<div class="lap_l1_div10"></div>
+				<div class="lap_l1_div20"></div>
+				<div class="lap_l1_div30"></div>
+				<div class="lap_l1_div40"></div>
+			</div>
+		</div>
+	</div>
+	<div class="news_year"><img src="img/产品资讯/2016-时间轴.png" style="margin:40px 0"></div>
+	<div class="news_month">
+		<hr class="month_hr"><p></p>
+		<div style="width:279px;"></div>
+		<div class="month_s"style="opacity:0"></div>
+		<div class="month_s"style="opacity:0"></div>
+		<div class="month_s"></div>
+		<div class="month_s"></div>
+		<div class="month_m"></div>
+		<div class="month_l"></div>
+		<div class="month_selected"></div>
+		<div class="month_l"></div>
+		<div class="month_s"></div>
+		<div class="month_s"style="opacity:0"></div>
+		<div class="month_s"style="opacity:0"></div>
+		<div class="month_s"style="opacity:0"></div>
+	</div>
+	<div class="news_content">
+		<div class="content_line"></div>
+		<div class="content_days">
+			<div class="days_first"><img src="img/产品资讯/18号.png"></div>
+			<div class="days_add"><img src="img/产品资讯/12号.png"></div>
+			<div class="days_add"><img src="img/产品资讯/6号.png"></div>
+		</div>
+		<div class="content_all">
+			<img src="img/产品资讯/阅读全部.png">
+			<div class="lap_m_div" style="top:0;left:0">
+				<div class="lap_m_div10"></div>
+				<div class="lap_m_div20"></div>
+				<div class="lap_m_div30"></div>
+				<div class="lap_m_div40"></div>
+			</div>
+		</div>
+		<div class="day_1 day_left">
+			<img src="img/产品资讯/白框-左文字对话框.png">
+			<div><img src="img/首页图片/(10).png"/></div>
+			<h3>英伟达最新公布的眼球追踪技术，或将改变VR行业</h3>
+			<p>同时解决渲染问题、画面延时和追踪速度，让虚拟世界更具真实感</p>
+			<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
+		</div>
+		<div class="day_2 day_right">
+			<img src="img/产品资讯/白框-右文字对话框.png">
+			<div><img src="img/首页图片/(9).png"/></div>
+			<h3>VR 游戏玩太久会怎样？玩家亲述恍如隔世的 “现实丧失感”</h3>
+			<p style="margin-top:20px;">如果长达数小时沉浸在 VR 世界里，除了老生常谈的晕动症问题，还体验到了一种名为“现实丧失感”的症状。</p>
+			<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
+		</div>
+		<div class="day_left">
+			<img src="img/产品资讯/白框-左文字对话框.png">
+			<div><img src="img/首页图片/(8).png"/></div>
+			<h3>视场角只有100°的索尼PSVR，原来还有这些细节</h3>
+			<p>100°FOV的索尼PS VR靠什么和HTC、Oculus同台竞争？</p>
+			<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div id="news_left">
+		<img src="img/主题周/首页-01_0001_左翻页.png">
+	</div>
+	<div id="news_right">
+		<img src="img/主题周/首页-01_0000_右翻页.png">
+	</div>
+</div>
+<div id="shop">
+	<img  class="cut" src="img/超品购/主推潮品和长杠.png">
+	<div class="shop_kong"></div>
+	<div class="trans10" id="shop_img"><div><img src="img/首页图片/(7).png"/></div></div>
+	<div class="trans10" id="shop_word">
+		<div><img src="img/超品购/本周潮品-文字.png"></div>
+		<p>PSVR 1920x1080 的分辨率，刷新率达到120Hz<br/>
+		在主机市场耕耘许久的索尼既是硬件厂，又是游戏开发商和发行商<br/>
+		在为产品提供高质量游戏方面有很大优势<br/>
+		今年的CES上，索尼CEO接受BBC采访表示目前针对PSVR开发中<br/>
+		的游戏有超过100款<br/>
+		PSVR的单一平台还有利于用户上手，只需将PS4和头盔接上就能迅
+		</p>
+		<img src="img/超品购/了解更多.png"/>
+		<div style="position:absolute;right:167;bottom:46;margin:-46 0 0 -167">
+			<div class="lap_l_div" style="top:0;left:0">
+				<div class="lap_l_div10"></div>
+				<div class="lap_l_div20"></div>
+				<div class="lap_l_div30"></div>
+				<div class="lap_l_div40"></div>
+			</div>
+		</div>
+	</div>
+	<div class="shop_more">
+		<div class="more_kong"></div>
+		<div class="more_big"><img style="opacity:0" src="img/超品购/大图-更多推荐.png">
+			<div class="contents shadow"><img src="img/首页图片/(5).png"/>
+			<div class="div0s">
+			<p>
+				Geat VR<br/><br/>
+				快速精确的追踪头部<br/>
+				手机显示屏与vr快速反应<br/>
+				对 GPU 进行优化
+			</p></div><div class="divs"></div>
+			</div>
+		</div>
+		<div><img style="opacity:0" src="img/超品购/小图-更多推荐.png">
+			<div class="content shadow"><img src="img/首页图片/(3).png"/>
+			<div class="div0">
+			<p>
+				HOLOLENS<br/><br/>
+				贴耳扬声器<br/>
+				4个环境感应摄像头<br/>
+				惯性感应单元<br/>
+				混合现实控制器
+			</p></div><div class="div"></div>
+			</div>
+		</div>
+		<div class="more_img"><img src="img/超品购/更多推荐.png"><div>VR/AR 头显</div></div>
+		<div style="clear:left"><img style="opacity:0" src="img/超品购/小图-更多推荐.png">
+			<div class="content shadow"><img src="img/首页图片/(4).png"/>
+			<div class="div0">
+			<p>
+				Oculus rift<br/><br/>
+				桌面红外LED追踪传感器<br/>
+				Xbox One手柄<br/>
+				Oculus无线遥控器
+			</p></div><div class="div"></div>
+			</div>
+		</div>
+		<div><img style="opacity:0" src="img/超品购/小图-更多推荐.png">
+			<div class="content shadow"><img src="img/首页图片/(6).png"/>
+			<div class="div0">
+			<p>
+				HTC vive<br/><br/>
+				2160 x 1200 分辨率<br/>
+				刷新率高达90fps<br/>
+				精确定位追踪
+			</p></div><div class="div"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="plan">
+	<img  class="cut" src="img/极客计划/极客计划和长杠.png">
+	<div id="plan_kong"></div>
+	<div id="plan_man">
+		<img src="img/首页图片/(2).png"/>
+		<img class="plan2_top_yuan" src="img/极客计划_零件/第四页_0006_半圆.png"/>
+		<img class="plan2_top_ren" src="img/极客计划_零件/第四页_0007_孟凡迪.png"/>
+		<img class="plan2_top_ben trans10" src="img/极客计划/第四页_0002_本周极客.png"/>
+		<img class="plan2_top_men trans10" src="img/极客计划/第四页_0001_创始人和孟凡迪.png"/>
+	</div>
+	<div id="plan_inf" style="position:relative;">
+		<div id="inf_word">
+			<p>公司：PICOOC</p>
+			<p>职位：创始人&CCO</p>
+			<p>擅长：硬件、工业设计</p>
+			<img src="img/极客计划_零件/第四页_0005_阅读详情.png" style="position:absolute;right:0;margin-top:-50px;"/>
+			<div style="position:absolute;right:177;margin-top:-50px;">
+				<div class="lap_m_div" style="top:0;left:0">
+					<div class="lap_m_div10"></div>
+					<div class="lap_m_div20"></div>
+					<div class="lap_m_div30"></div>
+					<div class="lap_m_div40"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="height:120px;width:1040px;"></div>
+	<div class="plan2_bottom" style="width:1050px;height:580px;position:relative;">
+		<div style="width:738px;height:426px;"></div>
+		<div style="height:100px;width:311px;"></div>
+		<img style="margin-left:200px;" src="img/极客计划_零件/jike.png"/>
+		<div style="width:311px;height:100px;">
+			<hr/>
+		</div>
+		<div style="width:311px;height:200px;">
+			<p>极客计划是亵玩的周期性的社群活动</p>
+			<p>每周亵玩会请科技行业内的顶尖极客与科技爱好者</p>
+			<p>举办线上或线下的分享会</p>
+			<p>并且整理为文章或者搜罗干货好文</p>
+			<p>在网站和公众号与粉丝分享</p>
+			<p>让极客们聚变出更多有意思的世界</p>
+		</div>
+	</div>
+
+</div>
+<div class="connect">
+	<img  class="cut" src="img/关于我们/关于我们和横杠.png">
+	<div class="connect_kong"></div>
+	<div class="connect_word"><img src="img/关于我们/联系信息文字.png"></div>
+	<div class="connect_img"><img src="img/关于我们/大楼图片和logo.png"></div>
+</div>
+<img style="margin-left:1000px" src="img/产品资讯_零件/产品资讯下拉_0000_返回顶部.png"/>
+<div class="backtop"  style="position:absolute;width:177px;height:52px;margin:-52 0 0 1000">
+<div class="lap_m_div">
+	<div class="lap_m_div10"></div>
+	<div class="lap_m_div20"></div>
+	<div class="lap_m_div30"></div>
+	<div class="lap_m_div40"></div>
+</div>
+</div>
+<div style="height:200px;width:100%"></div>
+<form method="post" action="3.php">
+	mingzi:<input type="text" name="name2"/>
+	<input type="submit">
+</form>
+</div>
+
+<div id="count2">
+	<div id="news2_title" style="width:1236px;height:448px;position:relative;">
+		<div style="width:150px;height:100%;float:left;"></div>
+		<div id="news2_title_word" style="float:left;width:300px;margin-top:-50px;">
+			<p>本周头条</p>
+			<hr />
+			<h2>将刷新率抬升到120Hz<br/>PlayStation VR有自己的小算盘</h2>
+			<h3>
+				在官方公布的PlayStation VR详细配置中，有一个
+				参数明显在目前三大主流虚拟现实头显中占据领先
+				地位——刷新率为120Hz，比HTC Vive和Oculus
+				Rift高了30Hz。在虚拟现实头显的参数中，这一数
+				据决定了眩晕感的强弱......
+			</h3>
+			<img id="news2_title_all" src="img/产品资讯/阅读全部.png"/>
+			<div style="position:absolute;top:380px;left:150px;">
+			<div class="lap_m_div" style="top:0;left:0">
+				<div class="lap_m_div10"></div>
+				<div class="lap_m_div20"></div>
+				<div class="lap_m_div30"></div>
+				<div class="lap_m_div40"></div>
+			</div>
+			</div>
+		</div>
+		<img id="news2_title_img" src="img/产品资讯_零件/产品资讯_0002_矢量智能对象.png"/>
+		<hr style="margin-left:80px;" id="news2_title_hr"/>
+	</div>
+	<div class="news2_down">
+		<img src="img/产品资讯_零件/产品资讯_0000_下滑箭头.png"/>
+	</div>
+	<hr/>
+	<div id="news2_square">
+		<p class="square0"></p>
+		<div class="square1">
+			<h2>小米VR正式版登场，它会成为国产手机盒子杀手吗？</h2>
+			<p><br/><br/><br/>今天推出的售价199元的小米VR正式版......</p>
+			<img src="img/产品资讯_零件/产品资讯下拉_0007_矢量智能对象.png" class="squr"/>
+			<img src="img/产品资讯_零件/产品资讯下拉_0008_阅读全部.png" class="all1"/>
+			<div style="position:absolute;margin:-30 0 0 70">
+				<div class="lap_s_div" style="top:0;left:0">
+					<div class="lap_s_div10"></div>
+					<div class="lap_s_div20"></div>
+					<div class="lap_s_div30"></div>
+					<div class="lap_s_div40"></div>
+				</div>
+				<div><img class="prewin" src="img/0/1.png"/></div>
+			</div>
+		</div>
+		<div class="square2">
+			<h2>DeepMind新动向所带来的A.I.创业启示</h2>
+			<p>DeepMind这家公司正推动着A.I.往纵深发展，而<br/>不是单纯地停留在围棋这样的领域......</p>
+			<img src="img/产品资讯_零件/产品资讯下拉_0005_矢量智能对象.png"/>
+			<img src="img/产品资讯_零件/产品资讯下拉_0008_阅读全部.png" class="all2"/>
+			<div style="position:absolute;margin:-30 0 0 250">
+				<div class="lap_s_div" style="top:0;left:0">
+					<div class="lap_s_div10"></div>
+					<div class="lap_s_div20"></div>
+					<div class="lap_s_div30"></div>
+					<div class="lap_s_div40"></div>
+				</div>
+				<div><img class="prewin" src="img/0/1.png"/></div>
+			</div>
+		</div>
+		<div class="square1">
+			<h2>汪峰的 Fiil 耳机一周年，面向运动市场推出新品</h2>
+			<p><br/><br/><br/>一年前的10月20日，汪峰投资并担任......</p>
+			<img src="img/产品资讯_零件/产品资讯下拉_0003_矢量智能对象.png" class="squr"/>
+			<img src="img/产品资讯_零件/产品资讯下拉_0008_阅读全部.png" class="all1"/>
+			<div style="position:absolute;margin:-30 0 0 70">
+				<div class="lap_s_div" style="top:0;left:0">
+					<div class="lap_s_div10"></div>
+					<div class="lap_s_div20"></div>
+					<div class="lap_s_div30"></div>
+					<div class="lap_s_div40"></div>
+				</div>
+				<div><img class="prewin" src="img/0/1.png"/></div>
+			</div>
+		</div>
+		<div class="square1 square1right">
+			<h2>对比Amazon Echo，Google Home为何只采用了2个麦克风？</h2>
+			<p><br/><br/><br/>2016年10月5日，Google秋季发布会正式</p>
+			<img src="img/产品资讯_零件/产品资讯下拉_0002_矢量智能对象.png"/>
+			<img src="img/产品资讯_零件/产品资讯下拉_0008_阅读全部.png" class="all3"/>
+			<div style="position:absolute;margin:-46 0 0 251">
+				<div class="lap_s_div" style="top:0;left:0">
+					<div class="lap_s_div10"></div>
+					<div class="lap_s_div20"></div>
+					<div class="lap_s_div30"></div>
+					<div class="lap_s_div40"></div>
+				</div>
+				<div><img class="prewin" src="img/0/1.png"/></div>
+			</div>
+		</div>
+		<div class="square3">
+			<h2>如何看待特斯拉的“全自动驾驶”？</h2>
+			<p>10 月 20日，特斯拉宣布其生产的所有特斯拉汽车都将配备可实现完全自动驾驶功能的硬件，并	且安全级别将远远高于人类自己驾驶......</p>
+			<img src="img/产品资讯_零件/产品资讯下拉_0006_矢量智能对象.png"/>
+			<img src="img/产品资讯_零件/产品资讯下拉_0008_阅读全部.png" class="all4"/>
+			<div style="position:absolute;margin:-30 0 0 250">
+				<div class="lap_s_div" style="top:0;left:0">
+					<div class="lap_s_div10"></div>
+					<div class="lap_s_div20"></div>
+					<div class="lap_s_div30"></div>
+					<div class="lap_s_div40"></div>
+				</div>
+				<div><img class="prewin" src="img/0/1.png"/></div>
+			</div>
+		</div>
+		<div class="square4">
+			<h2>小米MIX背后设计师Philippe Starck：曾为乔布斯造游轮</h2>
+			<p><br/><br/><br/>说到小米MIX的颜值，就不得不提这款手机背后的工业设计师——Philippe Starck</p>
+			<img src="img/产品资讯_零件/产品资讯下拉_0004_矢量智能对象.png" class="squr"/>
+			<img src="img/产品资讯_零件/产品资讯下拉_0008_阅读全部.png" class="all5"/>
+			<div style="position:absolute;margin:-30 0 0 70">
+				<div class="lap_s_div" style="top:0;left:0">
+					<div class="lap_s_div10"></div>
+					<div class="lap_s_div20"></div>
+					<div class="lap_s_div30"></div>
+					<div class="lap_s_div40"></div>
+				</div>
+				<div><img class="prewin" src="img/0/1.png"/></div>
+			</div>
+		</div>
+		<div class="square5">
+			<h2>专访大疆传媒CEO乔岩：航拍如何与VR结合？</h2>
+			<p><br/><br/><br/>连普通的VR全景影像该怎么拍我们还在......</p>
+			<img src="img/产品资讯_零件/产品资讯下拉_0001_矢量智能对象.png" class="squr"/>
+			<img src="img/产品资讯_零件/产品资讯下拉_0008_阅读全部.png" class="all1"/>
+			<div style="position:absolute;margin:-30 0 0 70">
+				<div class="lap_s_div" style="top:0;left:0">
+					<div class="lap_s_div10"></div>
+					<div class="lap_s_div20"></div>
+					<div class="lap_s_div30"></div>
+					<div class="lap_s_div40"></div>
+				</div>
+				<div><img class="prewin" src="img/0/1.png"/></div>
+			</div>
+		</div>
+	</div>
+	<hr/>
+	<div id="news2_linshi"></div>
+	<div id="news2_time">
+		<div id="news2_kong"></div>
+		<div class="news_year"><img src="img/产品资讯/2016-时间轴.png" style="margin:40px 0"></div>
+		<div class="news_month">
+			<hr class="month_hr"><p></p>
+			<div style="width:279px;"></div>
+			<div class="month_s"style="opacity:0"></div>
+			<div class="month_s"style="opacity:0"></div>
+			<div class="month_s"></div>
+			<div class="month_s"></div>
+			<div class="month_m"></div>
+			<div class="month_l"></div>
+			<div class="month_selected"></div>
+			<div class="month_l"></div>
+			<div class="month_s"></div>
+			<div class="month_s"style="opacity:0"></div>
+			<div class="month_s"style="opacity:0"></div>
+			<div class="month_s"style="opacity:0"></div>
+		</div>
+		<div class="news_content">
+			<div class="content_line"></div>
+			<div class="content_days">
+				<div class="days_first"><img src="img/产品资讯/18号.png"></div>
+				<div class="days_add"><img src="img/产品资讯/12号.png"></div>
+				<div class="days_add"><img src="img/产品资讯/6号.png"></div>
+			</div>
+			<div class="content_all">
+				<img src="img/产品资讯/阅读全部.png">
+				<div class="lap_m_div" style="top:0;left:0">
+					<div class="lap_m_div10"></div>
+					<div class="lap_m_div20"></div>
+					<div class="lap_m_div30"></div>
+					<div class="lap_m_div40"></div>
+				</div>
+			</div>
+			<div class="day_1 day_left">
+				<img src="img/产品资讯/白框-左文字对话框.png">
+				<div><img src="img/首页图片/(10).png"/></div>
+				<h3>英伟达最新公布的眼球追踪技术，或将改变VR行业</h3>
+				<p>同时解决渲染问题、画面延时和追踪速度，让虚拟世界更具真实感</p>
+				<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
+			</div>
+			<div class="day_2 day_right">
+				<img src="img/产品资讯/白框-右文字对话框.png">
+				<div><img src="img/首页图片/(9).png"/></div>
+				<h3>VR 游戏玩太久会怎样？玩家亲述恍如隔世的 “现实丧失感”</h3>
+				<p style="margin-top:20px;">如果长达数小时沉浸在 VR 世界里，除了老生常谈的晕动症问题，还体验到了一种名为“现实丧失感”的症状。</p>
+				<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
+			</div>
+			<div class="day_left">
+				<img src="img/产品资讯/白框-左文字对话框.png">
+				<div><img src="img/首页图片/(8).png"/></div>
+				<h3>视场角只有100°的索尼PSVR，原来还有这些细节</h3>
+				<p>100°FOV的索尼PS VR靠什么和HTC、Oculus同台竞争？</p>
+				<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
+			</div>
+		</div>
+	</div>
+	<div id="news2_topback">
+		<img src="img/产品资讯_零件/产品资讯下拉_0000_返回顶部.png"/>
+		<div class="lap_m_div backtop" style="top:0;left:0">
+			<div class="lap_m_div10"></div>
+			<div class="lap_m_div20"></div>
+			<div class="lap_m_div30"></div>
+			<div class="lap_m_div40"></div>
+		</div>
+	</div>
+</div>
+<div id="count3">
+	<div id="shop2_top">
+		<div id="shop2_top_kong"></div>
+		<div id="shop2_top_title">
+			<img src="img/潮品购_零件/未标题-1_0005_菜单三杠.png"/>
+			<div>
+				<img src="img/潮品购_零件/未标题-1_0004_本周热购.png"/>
+				<hr>
+				<p>本周主题是VR<br/>包括了各大品牌各大定<br/>位的VR头显</p>
+			</div>
+		</div>
+		<div id="shop2_top_word" style="opacity:0">
+			<div>
+				<div>
+					<img src="img/潮品购_零件/未标题-1_0021_产品名字.png"/>
+					<hr>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					这款产品内置了独立运动传感器，
+					官方称其灵敏度比普这款产品内置了独立运动
+					通VR头显高16倍。在适配方面，小米对MIUI底层渲染模块
+					进行了深度优化，小米表示它可以达到16毫秒的超低延迟</p>
+					<img id="goumai" src="img/潮品购_零件/未标题-1_0018_立即购买.png"/>
+					<div style="position:absolute;margin:-30 0 0 0">
+						<div class="lap_s_div" style="top:0;left:0">
+						<div class="lap_s_div10"></div>
+						<div class="lap_s_div20"></div>
+						<div class="lap_s_div30"></div>
+						<div class="lap_s_div40"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img id="shop2_top_img" style="margin-top:-80px;" src="img/潮品购_零件/第四页_0001_第三页的首页 - 副本1.png"/>
+	</div>
+	<div class="news2_down">
+		<img src="img/产品资讯_零件/产品资讯_0000_下滑箭头.png"/>
+	</div>
+	<div id="shop2_middle">
+		<div class="shop_more">
+			<div class="more_kong"></div>
+			<div class="more_big"><img style="opacity:0" src="img/超品购/大图-更多推荐.png">
+				<div class="contents shadow"><img src="img/首页图片/(5).png"/>
+				<div class="div0s">
+				<p>
+				Geat VR<br/><br/>
+				快速精确的追踪头部<br/>
+				手机显示屏与vr快速反应<br/>
+				对 GPU 进行优化
+				</p></div><div class="divs"></div>
+				</div>
+			</div>
+			<div><img style="opacity:0" src="img/超品购/小图-更多推荐.png">
+				<div class="content shadow"><img src="img/首页图片/(3).png"/>
+				<div class="div0">
+				<p>
+				HOLOLENS<br/><br/>
+				贴耳扬声器<br/>
+				4个环境感应摄像头<br/>
+				惯性感应单元<br/>
+				混合现实控制器
+				</p></div><div class="div"></div>
+				</div>
+			</div>
+			<div class="more_img"><img src="img/超品购/更多推荐.png"><div>VR/AR 头显</div></div>
+			<div style="clear:left"><img style="opacity:0" src="img/超品购/小图-更多推荐.png">
+				<div class="content shadow"><img src="img/首页图片/(4).png"/>
+				<div class="div0">
+				<p>
+				Oculus rift<br/><br/>
+				桌面红外LED追踪传感器<br/>
+				Xbox One手柄<br/>
+				Oculus无线遥控器
+				</p></div><div class="div"></div>
+				</div>
+			</div>
+			<div><img style="opacity:0" src="img/超品购/小图-更多推荐.png">
+				<div class="content shadow"><img src="img/首页图片/(6).png"/>
+				<div class="div0">
+				<p>
+				HTC vive<br/><br/>
+				2160 x 1200 分辨率<br/>
+				刷新率高达90fps<br/>
+				精确定位追踪
+				</p></div><div class="div"></div>
+				</div>
+			</div>
+		</div>
+		<div style="height:650px;width:100%;"></div>
+		<hr/>
+		<div style="height:120px;width:100%;"></div>
+		<div id="shop2_middle_fenlei">
+			<div style="width:359px">
+				<div><img id="shop2_middle_fenlei_title" src="img/潮品购_零件/未标题-1_0016_产品分类-带杠.png"/></div>
+				<div><img src="img/潮品购_零件/未标题-1_0015_智能家居.png"/></div>
+				<div class="fenlei_word0"><p>智能家居</p></div>
+			</div>
+			<div style="margin-left:36px">
+				<img src="img/潮品购_零件/未标题-1_0014_vr.png"/>
+				<div class="fenlei_word0"><p>VR</p></div>
+			</div>
+			<div style="position:absolute;height:214px;right:165;z-index:3">
+				<div class="fenlei_word0"><p>硬件配套</p></div>
+			</div>
+			<div style="margin-left:36px">
+				<img src="img/潮品购_零件/未标题-1_0013_硬件配套.png"/>
+				<img src="img/潮品购_零件/未标题-1_0012_摄像头.png"style="margin-top:40"/>
+				<div class="fenlei_word0"><p>摄像头</p></div>
+			</div>
+			<div style="width:359px;height:215px;margin-top:36px">
+				<img src="img/潮品购_零件/未标题-1_0011_音响.png"/>
+				<div class="fenlei_word0"><p>音响</p></div>
+			</div>
+			<div style="width:645px;height:215px;margin:36px 0 0 36px">
+				<img src="img/潮品购_零件/未标题-1_0010_无人机.png"/>
+				<div class="fenlei_word0"><p>无人机</p></div>
+			</div>
+		</div>
+		<hr/>
+		<div style="height:80px;width:100%;"></div>
+		<div id="shop2_middle_dianpu">
+			<div>
+				<div>
+					<img src="img/潮品购_零件/未标题-1_0007_网上店铺.png"/>
+					<span>
+						<img src="img/潮品购_零件/未标题-1_0006_进入店铺.png"/>
+						<div class="lap_s_div" style="top:70;right:0">
+							<div class="lap_s_div10"></div>
+							<div class="lap_s_div20"></div>
+							<div class="lap_s_div30"></div>
+							<div class="lap_s_div40"></div>
+						</div>
+					</span>
+					<div>
+						<p>扫描右方二维码进入亵玩淘宝店</p>
+					</div>
+				</div>
+			</div>
+			<img src="img/潮品购_零件/第四页_0000_第三页的购物.png"/>
+		</div>
+		
+	</div>
+	<img style="margin-left:1027px;margin-top:100px;" src="img/产品资讯_零件/产品资讯下拉_0000_返回顶部.png"/>
+	<div class="backtop" style="position:absolute;margin-left:1027px;margin-top:-52px">
+		<div class="lap_m_div" style="top:0;left:0">
+			<div class="lap_m_div10"></div>
+			<div class="lap_m_div20"></div>
+			<div class="lap_m_div30"></div>
+			<div class="lap_m_div40"></div>
+		</div>
+	</div>
+	<div style="height:200px"></div>
+</div>
+
+<div id="count4">
+	<div style="width:165px;height:2500px"></div>
+	<div id="plan2_top">
+		<img class="plan2_top_yuan" src="img/极客计划_零件/第四页_0006_半圆.png"/>
+		<img class="plan2_top_ren" src="img/极客计划_零件/第四页_0007_孟凡迪.png" style="opacity:0"/>
+		<img class="plan2_top_ben trans5" src="img/极客计划/第四页_0002_本周极客.png"/>
+		<img class="plan2_top_men trans5" src="img/极客计划/第四页_0001_创始人和孟凡迪.png"/>
+		<img src="img/极客计划_零件/第四页_0008_极客背景.png"/>
+		<div style="width:265px;height:296px"></div>
+		<div style="width:700px;height:180px"></div>
+		<div>
+			<p class="plan2_top_word">公司：PICOOC</p>
+			<p class="plan2_top_word">职位：创始人&CCO</p>
+			<p class="plan2_top_word">擅长：硬件、工业设计</p>
+		</div>
+		<img src="img/极客计划_零件/第四页_0005_阅读详情.png"/>
+		<div style="position:absolute;margin:-52 0 0 865;">
+			<div class="lap_m_div" style="top:0;left:0">
+				<div class="lap_m_div10"></div>
+				<div class="lap_m_div20"></div>
+				<div class="lap_m_div30"></div>
+				<div class="lap_m_div40"></div>
+			</div>
+		</div>
+	</div>
+	<div style="width:1050px;height:200px"></div>
+	<div style="width:1050px;height:1000px">
+		<div class="news_year"><img src="img/产品资讯/2016-时间轴.png" style="margin:40px 0"></div>
+		<div class="news_month">
+			<hr class="month_hr"><p></p>
+			<div style="width:279px;"></div>
+			<div class="month_s"style="opacity:0"></div>
+			<div class="month_s"style="opacity:0"></div>
+			<div class="month_s"></div>
+			<div class="month_s"></div>
+			<div class="month_m"></div>
+			<div class="month_l"></div>
+			<div class="month_selected"></div>
+			<div class="month_l"></div>
+			<div class="month_s"></div>
+			<div class="month_s"style="opacity:0"></div>
+			<div class="month_s"style="opacity:0"></div>
+			<div class="month_s"style="opacity:0"></div>
+		</div>
+		<div class="news_content">
+			<div class="content_line"></div>
+			<div class="content_days">
+				<div class="days_first"><img src="img/产品资讯/18号.png"></div>
+				<div class="days_add"><img src="img/产品资讯/12号.png"></div>
+				<div class="days_add"><img src="img/产品资讯/6号.png"></div>
+			</div>
+			<div class="content_all">
+				<img src="img/产品资讯/阅读全部.png">
+				<div class="lap_m_div" style="top:0;left:0">
+					<div class="lap_m_div10"></div>
+					<div class="lap_m_div20"></div>
+					<div class="lap_m_div30"></div>
+					<div class="lap_m_div40"></div>
+				</div>
+			</div>
+			<div class="day_1 day_left">
+				<img src="img/产品资讯/白框-左文字对话框.png">
+				<div><img src="img/极客计划_零件/第四页_0004_陈小平.png"/></div>
+				<h3>云米陈小平：创业不是为捞一笔就走</h3>
+				<p>陈小平说自己是个理性的人，39岁出来创业并不是残存的荷尔蒙作祟，也不是为了捞一笔就走的。但是总之，就是自己是想、、、</p>
+				<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
+			</div>
+			<div class="day_2 day_right">
+				<img src="img/产品资讯/白框-右文字对话框.png">
+				<div><img src="img/极客计划_零件/第四页_0003_张小龙.png"/></div>
+				<h3>张小龙最新内部演讲：警惕KPI和流程</h3>
+				<p>近日，张小龙在会上发表了演讲，以过往实例阐述了自己对产品与管理的思考。一方面，他再次重申了效率至上的价值观念、、、</p>
+				<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
+			</div>
+			<div class="day_left">
+				<img src="img/产品资讯/白框-左文字对话框.png">
+				<div><img src="img/极客计划_零件/第四页_0002_顾嘉唯.png"/></div>
+				<h3>离开百度，“少帅”顾嘉唯加入物灵科技</h3>
+				<p>人工智能作为一个高门槛“风口”，在“大众创业，万众创新”被“资本寒冬”洗礼中之后，无疑是会提高资本的运转效率、、、</p>
+				<h4><img src="img/产品资讯/阅读详情.png"><div><img class="prewin" src="img/0/1.png"/></div></h4>
+			</div>
+		</div>
+	</div>
+	<div class="plan2_bottom" style="width:1050px;height:450px;position:relative">
+		<div style="width:738px;height:426px;"></div>
+		<div style="height:100px;width:311px;"></div>
+		<img style="margin-left:200px;" src="img/极客计划_零件/jike.png"/>
+		<div style="width:311px;height:100px;">
+			<hr/>
+		</div>
+		<div style="width:311px;height:200px;">
+			<p>极客计划是亵玩的周期性的社群活动</p>
+			<p>每周亵玩会请科技行业内的顶尖极客与科技爱好者</p>
+			<p>举办线上或线下的分享会</p>
+			<p>并且整理为文章或者搜罗干货好文</p>
+			<p>在网站和公众号与粉丝分享</p>
+			<p>让极客们聚变出更多有意思的世界</p>
+		</div>
+	</div>
+	<img style="margin-left:890px;margin-top:100px;" src="img/产品资讯_零件/产品资讯下拉_0000_返回顶部.png"/>
+	<div class="backtop" style="position:absolute;margin:-52 0 0 1055">
+		<div class="lap_m_div" style="top:0;left:0">
+			<div class="lap_m_div10"></div>
+			<div class="lap_m_div20"></div>
+			<div class="lap_m_div30"></div>
+			<div class="lap_m_div40"></div>
+		</div>
+	</div>
+	<div style="height:300px"></div>
+</div>
+<div id="count5">
+	<img  class="cut" style="left:240px" src="img/关于我们/关于我们和横杠.png">
+	<div style="width:165px;float:left;height:500px"></div>
+	<div class="connect" style="float:left;width:1100px;">
+		<div class="connect_kong"></div>
+		<div class="connect_word"><img src="img/关于我们/联系信息文字.png"></div>
+		<div class="connect_img"><img src="img/关于我们/大楼图片和logo.png"></div>
+	</div>
+	<div style="height:100px;width:1366px;float:left;"></div>
+</div>
+
+</div>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/effect.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
