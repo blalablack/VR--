@@ -1,8 +1,4 @@
-﻿////////////////////////////////////////////////////////////////////////////////////////////
-var dd = 0;
-var interval;
-//---------------------------------------------------------------------------------------------
-
+﻿
 /*******************初始化操作****************/
 window.onload = function () {
     check_left();
@@ -323,158 +319,144 @@ $("#top_lead").delegate("h3","click",function(){
 	
 	
 });
-//---------------------------------------------------------------------------------------------
-
-
 
 
 /////////////////////////////////////////////////////滑动块///////////////////////////////////////////
+	//小图片进入
+	function l_imgb(elem){
+			//遮罩恢复
+			elem.prev().animate({left: 0, top: 0}, 200);
+            elem.prev().prev().stop(true);
+			//小图片变大
+            elem.prev().prev().animate({width: 350, left: -25, top: -18}, 300);
+	}
+	//小图片出去
+	function i_imgs(elem){
+			elem.prev().prev().stop(true);
+            elem.prev().prev().animate({width: 303, left: 0, top: 0}, 300);
+	}
+	
     $('.div').mouseenter(function (e) {
         var x = parseFloat(e.offsetX);
         var y = parseFloat(e.offsetY) * 1.4;
         if (x <= y && x + y <= 303) {
-            $(this).prev().stop(true);
-            $(this).prev().css({'top': '0', 'left': '-302px'});
-            $(this).prev().animate({left: 0, top: 0}, 200);
-            $(this).prev().prev().stop(true);
-            $(this).prev().prev().animate({width: 350, left: -25, top: -18}, 300);
+			//左边进
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().css({'top': '0', 'left': '-302px'});
+            l_imgb(elem);
         }
         if (x <= y && x + y > 303) {
-            $(this).prev().stop(true);
-            $(this).prev().css({'top': '213px', 'left': '0'});
-            $(this).prev().animate({left: 0, top: 0}, 200);
-            $(this).prev().prev().stop(true);
-            $(this).prev().prev().animate({width: 350, left: -25, top: -18}, 300);
+			//下边进
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().css({'top': '213px', 'left': '0'});
+            l_imgb(elem);
         }
         if (x > y && x + y < 303) {
-            $(this).prev().stop(true);
-            $(this).prev().css({'top': '-213px', 'left': '0'});
-            $(this).prev().animate({left: 0, top: 0}, 200);
-            $(this).prev().prev().stop(true);
-            $(this).prev().prev().animate({width: 350, left: -25, top: -18}, 300);
+			//上边进
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().css({'top': '-213px', 'left': '0'});
+            l_imgb(elem);
         }
         if (x > y && x + y >= 303) {
-            $(this).prev().stop(true);
-            $(this).prev().css({'left': '302px'});
-            $(this).prev().animate({left: 0, top: 0}, 200);
-            $(this).prev().prev().stop(true);
-            $(this).prev().prev().animate({width: 350, left: -25, top: -18}, 300);
+			//右边进
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().css({'left': '302px'});
+            l_imgb(elem);
         }
     });
     $('.div').mouseleave(function (e) {
         if (e.offsetX <= 0) {
-            $(this).prev().stop(true);
-            $(this).prev().animate({left: -302, top: 0}, 200);
-            $(this).prev().prev().stop(true);
-            $(this).prev().prev().animate({width: 303, left: 0, top: 0}, 300);
+			//左边出
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().animate({left: -302, top: 0}, 200);
+            i_imgs(elem)
         }
         if (e.offsetX >= 302) {
-            $(this).prev().stop(true);
-            $(this).prev().animate({left: 302, top: 0}, 200);
-            $(this).prev().prev().stop(true);
-            $(this).prev().prev().animate({width: 303, left: 0, top: 0}, 300);
+			//右边出
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().animate({left: 302, top: 0}, 200);
+            i_imgs(elem)
         }
         if (e.offsetY <= 0) {
-            $(this).prev().stop(true);
-            $(this).prev().animate({left: 0, top: -213}, 200);
-            $(this).prev().prev().stop(true);
-            $(this).prev().prev().animate({width: 303, left: 0, top: 0}, 300);
+			//上边出
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().animate({left: 0, top: -213}, 200);
+            i_imgs(elem)
         }
         if (e.offsetY >= 213) {
-            $(this).prev().stop(true);
-            $(this).prev().animate({left: 0, top: 213}, 200);
-            $(this).prev().prev().stop(true);
-            $(this).prev().prev().animate({width: 303, left: 0, top: 0}, 300);
+			//下边出
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().animate({left: 0, top: 213}, 200);
+            i_imgs(elem)
         }
     });
+	//大图片的进出事件
     $('.divs').mouseenter(function (e) {
         var x = parseFloat(e.offsetX) * 1.3;
         var y = parseFloat(e.offsetY);
-        if (x <= y && x + y <= 357) {
-            $(this).prev().stop(true);
-            $(this).prev().css({'top': '0', 'left': '-357px'});
-            $(this).prev().animate({left: 0, top: 0}, 200);
+        if (x <= y && x + y <= 464) {
+			//左边进
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().css({'top': '0', 'left': '-357px'});
+            elem.prev().animate({left: 0, top: 0}, 200);
         }
-        if (x <= y && x + y > 357) {
-            $(this).prev().stop(true);
-            $(this).prev().css({'top': '468px', 'left': '0'});
-            $(this).prev().animate({left: 0, top: 0}, 200);
+        if (x <= y && x + y > 464) {
+			//下边进
+			var elem=$(this);
+           elem.prev().stop(true);
+           elem.prev().css({'top': '468px', 'left': '0'});
+            elem.prev().animate({left: 0, top: 0}, 200);
         }
-        if (x > y && x + y < 357) {
-            $(this).prev().stop(true);
-            $(this).prev().css({'top': '-468px', 'left': '0'});
-            $(this).prev().animate({left: 0, top: 0}, 200);
+        if (x > y && x + y < 464) {
+			//上边进
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().css({'top': '-468px', 'left': '0'});
+            elem.prev().animate({left: 0, top: 0}, 200);
         }
-        if (x > y && x + y >= 357) {
-            $(this).prev().stop(true);
-            $(this).prev().css({'left': '357px'});
-            $(this).prev().animate({left: 0, top: 0}, 200);
+        if (x > y && x + y >= 464) {
+			//右边进
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().css({'left': '357px'});
+            elem.prev().animate({left: 0, top: 0}, 200);
         }
     });
     $('.divs').mouseleave(function (e) {
         if (e.offsetX <= 0) {
-            $(this).prev().stop(true);
-            $(this).prev().animate({left: -357, top: 0}, 200);
+			//左边出
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().animate({left: -357, top: 0}, 200);
         }
         if (e.offsetX >= 357) {
-            $(this).prev().stop(true);
-            $(this).prev().animate({left: 357, top: 0}, 200);
+			//右边出
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().animate({left: 357, top: 0}, 200);
         }
         if (e.offsetY <= 0) {
-            $(this).prev().stop(true);
-            $(this).prev().animate({left: 0, top: -468}, 200);
+			//上边出
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().animate({left: 0, top: -468}, 200);
         }
         if (e.offsetY >= 468) {
-            $(this).prev().stop(true);
-            $(this).prev().animate({left: 0, top: 468}, 200);
+			//下边出
+			var elem=$(this);
+            elem.prev().stop(true);
+            elem.prev().animate({left: 0, top: 468}, 200);
         }
     });
-//---------------------------------------------------------------------------------------------------
-
-
-//////////////////////////////////////////////////三角排布////////////////////////////////////////////
-    var top = 140;
-    var left = 0;
-    for (var i = 1; i <= 7; i++) {
-        if (i % 2 == 1) {
-            top = 20
-        }
-        else {
-            top = 0
-        }
-        if (i == 1) {
-            left = 86;
-        }
-        $('.plan2_bottom').append('<img src="img/三角形/(' + i + ').png"style="position:absolute;top:' + top + 'px;left:' + left + 'px;"/>');
-        left += 86.5;
-    }
-    for (var i = 8; i <= 15; i++) {
-        if (i % 2 == 1) {
-            top = 145
-        }
-        else {
-            top = 165
-        }
-        if (i == 8) {
-            left = 0;
-        }
-        $('.plan2_bottom').append('<img src="img/三角形/(' + i + ').png"style="position:absolute;top:' + top + 'px;left:' + left + 'px;"/>');
-        left += 86.5;
-    }
-    for (var i = 16; i <= 23; i++) {
-        if (i % 2 == 1) {
-            top = 310
-        }
-        else {
-            top = 290
-        }
-        if (i == 16) {
-            left = 0;
-        }
-        $('.plan2_bottom').append('<img src="img/三角形/(' + i + ').png"style="position:absolute;top:' + top + 'px;left:' + left + 'px;"/>');
-        left += 86.5;
-    }
-//---------------------------------------------------------------------------------------------------------------
 
 /////////////////////////////////////////////////////下滑箭头//////////////////////////////////////////////////////
     function downheightChange() {
@@ -508,24 +490,24 @@ $("#top_lead").delegate("h3","click",function(){
            
         });
     });
-//---------------------------------------------------------------------------------------------------------------
-////////////////////////////////////////////////////////搜索框//////////////////////////////////////////////////
+
+/****************************上部搜索框********************/
     $('.input').focus(function () {
         $('#search11').css({'top': '29', 'right': '68'});
     });
     $('.input').blur(function () {
         $('#search11').css({'top': '25', 'right': '70'});
     });
-//---------------------------------------------------------------------------------------------------------------
 
-
-///////////////////////////////////////////////////////按钮线圈///////////////////////////////////////////////////
+/****************************按钮线圈**********************/
     $('.lap_m_div').mouseenter(function () {
-        $(this).children('.lap_m_div10').attr({'class': 'lap_m_div1'});
-        $(this).children('.lap_m_div20').attr({'class': 'lap_m_div2'});
-        $(this).children('.lap_m_div30').attr({'class': 'lap_m_div3'});
-        $(this).children('.lap_m_div40').attr({'class': 'lap_m_div4'});
+		var elem=$(this);
+        elem.children('.lap_m_div10').attr({'class': 'lap_m_div1'});
+        elem.children('.lap_m_div20').attr({'class': 'lap_m_div2'});
+        elem.children('.lap_m_div30').attr({'class': 'lap_m_div3'});
+        elem.children('.lap_m_div40').attr({'class': 'lap_m_div4'});
     });
+	//全部恢复
     $('.lap_m_div').mouseleave(function () {
         $('.lap_m_div1').attr({'class': 'lap_m_div10'});
         $('.lap_m_div2').attr({'class': 'lap_m_div20'});
@@ -533,10 +515,11 @@ $("#top_lead").delegate("h3","click",function(){
         $('.lap_m_div4').attr({'class': 'lap_m_div40'});
     });
     $('.lap_s_div').mouseenter(function () {
-        $(this).children('.lap_s_div10').attr({'class': 'lap_s_div1'});
-        $(this).children('.lap_s_div20').attr({'class': 'lap_s_div2'});
-        $(this).children('.lap_s_div30').attr({'class': 'lap_s_div3'});
-        $(this).children('.lap_s_div40').attr({'class': 'lap_s_div4'});
+		var elem=$(this);
+        elem.children('.lap_s_div10').attr({'class': 'lap_s_div1'});
+        elem.children('.lap_s_div20').attr({'class': 'lap_s_div2'});
+        elem.children('.lap_s_div30').attr({'class': 'lap_s_div3'});
+        elem.children('.lap_s_div40').attr({'class': 'lap_s_div4'});
     });
     $('.lap_s_div').mouseleave(function () {
         $('.lap_s_div1').attr({'class': 'lap_s_div10'});
@@ -545,10 +528,11 @@ $("#top_lead").delegate("h3","click",function(){
         $('.lap_s_div4').attr({'class': 'lap_s_div40'});
     });
     $('.lap_l_div').mouseenter(function () {
-        $(this).children('.lap_l_div10').attr({'class': 'lap_l_div1'});
-        $(this).children('.lap_l_div20').attr({'class': 'lap_l_div2'});
-        $(this).children('.lap_l_div30').attr({'class': 'lap_l_div3'});
-        $(this).children('.lap_l_div40').attr({'class': 'lap_l_div4'});
+		var elem=$(this);
+        elem.children('.lap_l_div10').attr({'class': 'lap_l_div1'});
+        elem.children('.lap_l_div20').attr({'class': 'lap_l_div2'});
+        elem.children('.lap_l_div30').attr({'class': 'lap_l_div3'});
+        elem.children('.lap_l_div40').attr({'class': 'lap_l_div4'});
     });
     $('.lap_l_div').mouseleave(function () {
         $('.lap_l_div1').attr({'class': 'lap_l_div10'});
@@ -557,10 +541,11 @@ $("#top_lead").delegate("h3","click",function(){
         $('.lap_l_div4').attr({'class': 'lap_l_div40'});
     });
     $('.lap_l1_div').mouseenter(function () {
-        $(this).children('.lap_l1_div10').attr({'class': 'lap_l1_div1'});
-        $(this).children('.lap_l1_div20').attr({'class': 'lap_l1_div2'});
-        $(this).children('.lap_l1_div30').attr({'class': 'lap_l1_div3'});
-        $(this).children('.lap_l1_div40').attr({'class': 'lap_l1_div4'});
+		var elem=$(this);
+        elem.children('.lap_l1_div10').attr({'class': 'lap_l1_div1'});
+        elem.children('.lap_l1_div20').attr({'class': 'lap_l1_div2'});
+        elem.children('.lap_l1_div30').attr({'class': 'lap_l1_div3'});
+        elem.children('.lap_l1_div40').attr({'class': 'lap_l1_div4'});
     });
     $('.lap_l1_div').mouseleave(function () {
         $('.lap_l1_div1').attr({'class': 'lap_l1_div10'});
@@ -568,41 +553,35 @@ $("#top_lead").delegate("h3","click",function(){
         $('.lap_l1_div3').attr({'class': 'lap_l1_div30'});
         $('.lap_l1_div4').attr({'class': 'lap_l1_div40'});
     });
-//-----------------------------------------------------------------------------------------------------------------
-
-
-////////////////////////////////////////////////////上浮黑框字////////////////////////////////////////////////////
+/******************产品图移入移除字上浮*****************/
     $('#shop2_middle_fenlei>div').mouseenter(function () {
         $(this).children('.fenlei_word0').attr({'class': 'fenlei_word1 trans5'});
     });
     $('#shop2_middle_fenlei>div').mouseleave(function () {
         $(this).children('.fenlei_word1').attr({'class': 'fenlei_word0 trans5'});
     });
-//------------------------------------------------------------------------------------------------------------
-
 
 ////////////////////////////////////////////////////阅读详情////////////////////////////////////////////////////
+	//移入移除变化
     $('.day_left>h4>img,.day_right>h4>img').mouseenter(function () {
         $(this).attr('src', 'img/产品资讯/阅读详情2.png');
     });
     $('.day_left>h4>img,.day_right>h4>img').mouseleave(function () {
         $(this).attr('src', 'img/产品资讯/阅读详情.png');
     });
+	//click事件
     $('.day_left>h4>img,.day_right>h4>img,.lap_s_div').click(function () {
         $(this).next().children().attr('class', 'window trans5');
-        
         $('.windowb10').attr('class', 'windowb windowb1 trans5');
         $('.windowb20').attr('class', 'windowb windowb2 trans5');
     });
     $('.windowb').click(function () {
-        
         $('.windowb1').attr('class', 'windowb windowb10');
         $('.windowb2').attr('class', 'windowb windowb20');
         $('.window').attr('class', 'prewin');
     });
-//------------------------------------------------------------------------------------------------------------
 
-////////////////////////////////////////////////////logo////////////////////////////////////////////////////
+/*********************logo的事件***********************/
     function logoOne() {
         $('#title_img').css('opacity', '0');
         setTimeout(function () {
@@ -618,10 +597,14 @@ $("#top_lead").delegate("h3","click",function(){
             $('#logo1').css('opacity', '0')
         }, 1300);
     }
-
+	var interval;
+	//over和out事件
+	
     $('#logo0').mouseenter(function () {
+		//先执行一次
         logoOne();
-        interval = setInterval(logoOne, 2700);
+		//没2秒执行一次像呼吸灯一样
+        interval = setInterval(logoOne, 2000);
     });
     $('#logo0').mouseleave(function () {
         clearInterval(interval);
@@ -629,83 +612,55 @@ $("#top_lead").delegate("h3","click",function(){
         $('#logo1').css('opacity', '0');
         $('#logo2').css('opacity', '0');
     });
+	//click事件，和点击的首页功能一样
     $('#logo0').click(function () {
+		switch0()
         switch1();
     });
-//------------------------------------------------------------------------------------------------------------
 
-//////////////////////////////////////////////////CIRCLE/////////////////////////////////////////////////////
-    $('#theme_circle div').click(function () {
-        $('#theme_circle div').attr('class', '');
-        $(this).attr('class', 'circled trans5');
-    });
-    $('#theme_circle_1').click(function () {
-        pos = 1;
-        $(themeimgs[0]).attr('class', 'theme_img_now trans7');
+/***************首页circle****************/
+	//取得图片元素
+	var themeimg = document.getElementById("theme_img");
+    var themeimgs = themeimg.querySelectorAll("div");
+	$("#theme_circle").delegate("div","click",function(){
+		var elem=$(this);
+		//清除以前的，变为现在的
+		elem.siblings(".circled").removeClass();
+		elem.addClass("circled");
+		//判断点击的是那个原型，改变对应的图片的class，利用transition
+		var id=elem.attr("id");
+		if(id=="theme_circle_1"){
+			$(themeimgs[0]).attr('class', 'theme_img_now trans7');
         $(themeimgs[1]).attr('class', 'theme_img_left trans7');
         $(themeimgs[2]).attr('class', 'theme_img_left trans7');
         $(themeimgs[3]).attr('class', 'theme_img_left trans7');
-    });
-    $('#theme_circle_2').click(function () {
-        pos = 2;
-        $(themeimgs[0]).attr('class', 'theme_img_right trans7');
+		}else if(id=="theme_circle_2"){
+			$(themeimgs[0]).attr('class', 'theme_img_right trans7');
         $(themeimgs[1]).attr('class', 'theme_img_now trans7');
         $(themeimgs[2]).attr('class', 'theme_img_left trans7');
         $(themeimgs[3]).attr('class', 'theme_img_left trans7');
-    });
-    $('#theme_circle_3').click(function () {
-        pos = 3;
-        $(themeimgs[0]).attr('class', 'theme_img_right trans7');
+		}else if(id=="theme_circle_3"){
+			$(themeimgs[0]).attr('class', 'theme_img_right trans7');
         $(themeimgs[1]).attr('class', 'theme_img_right trans7');
         $(themeimgs[2]).attr('class', 'theme_img_now trans7');
         $(themeimgs[3]).attr('class', 'theme_img_left trans7');
-    });
-    $('#theme_circle_4').click(function () {
-        pos = 4;
-        $(themeimgs[0]).attr('class', 'theme_img_right trans7');
+		}else{
+			$(themeimgs[0]).attr('class', 'theme_img_right trans7');
         $(themeimgs[1]).attr('class', 'theme_img_right trans7');
         $(themeimgs[2]).attr('class', 'theme_img_right trans7');
         $(themeimgs[3]).attr('class', 'theme_img_now trans7');
-    });
-    var themeimg = document.getElementById("theme_img");
-    var themeimgs = themeimg.querySelectorAll("div");
-    var circle = document.getElementById("theme_circle");
-    var circles = circle.querySelectorAll("div");
-    var pos = 1;
-    $('#theme_next_left').click(function () {
-        pos -= 1;
-        if (pos <= 1) {
-            pos = 1
-        }
-        $(themeimgs[pos]).attr('class', 'theme_img_left trans7');
-        $(themeimgs[pos - 1]).attr('class', 'theme_img_now trans7');
-        $(circles).attr('class', '');
-        $(circles[pos - 1]).attr('class', 'circled trans5');
-    });
-    $('#theme_next_right').click(function () {
-        pos += 1;
-        if (pos >= 4) {
-            pos = 4
-        }
-        $(themeimgs[pos - 2]).attr('class', 'theme_img_right trans7');
-        $(themeimgs[pos - 1]).attr('class', 'theme_img_now trans7');
-        $(circles).attr('class', '');
-        $(circles[pos - 1]).attr('class', 'circled trans5');
-    });
-//---------------------------------------------------------------------------------------------------------------
-
-//////////////////////////////////////////////////TOP/////////////////////////////////////////////////////
+		}
+	});
+    
+/**************backtop***************/
     $('.backtop').click(function () {
-        $('body').animate({scrollTop: 0}, 900, 'easeOutCirc');
+        $('body').animate({scrollTop: 0}, 800, 'easeOutCirc');
     });
 
-//---------------------------------------------------------------------------------------------------------------
 
 
-//////////////////////////////////////////////////去除LOADING/////////////////////////////////////////////////////
 
 
-//---------------------------------------------------------------------------------------------------------------
 
 
 

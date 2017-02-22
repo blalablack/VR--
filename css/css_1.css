@@ -54,13 +54,13 @@ Comment
 .shadow {
     box-shadow: 3px 3px 12px #666;
 }
-
-.trans5 {
-    transition: all .5s cubic-bezier(0, 0, .17, 1);
+.trans5{
+	transition: all .5s cubic-bezier(0, 0, .17, 1);
     -webkit-transition: all .5s cubic-bezier(0, 0, .17, 1);
     -moz-transition: all .5s cubic-bezier(0, 0, .17, 1);
     -o-transition: all .5s cubic-bezier(0, 0, .17, 1);
 }
+
 
 .trans7 {
     transition: left .7s cubic-bezier(0, 0, .17, 1);
@@ -325,58 +325,27 @@ Comment
     opacity: 0;
 }
 
-#theme_next img {
-    cursor: pointer;
-    position: absolute;
-    padding: 15px;
-}
-
-#theme_next {
-    width: 100px;
-    height: 50px;
-    top: 437px;
-    left: 780px;
-}
-
-#theme_next_right {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-}
-
-#theme_next_left {
-    left: 0
-}
-
-#theme_next_right {
-    left: 50px
-}
-
 .circled {
     background: #282828;
+	transition: all .5s cubic-bezier(0, 0, .17, 1);
+    -webkit-transition: all .5s cubic-bezier(0, 0, .17, 1);
+    -moz-transition: all .5s cubic-bezier(0, 0, .17, 1);
+    -o-transition: all .5s cubic-bezier(0, 0, .17, 1);
 }
 
-#theme_next_left:hover {
-    left: -10px;
-}
-
-#theme_next_right:hover {
-    left: 60px;
-}
 
 #theme_circle {
     width: 194px;
     height: 15px;
-    top: 460px;
-    left: 537px;
+    top: 455px;
+    left: 790px;
 }
 
 #theme_circle div {
     cursor: pointer;;
     float: left;
-    width: 9px;
-    height: 9px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     border: 1px solid #282828;
     margin-right: 10px;

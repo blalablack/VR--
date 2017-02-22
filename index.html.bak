@@ -78,10 +78,6 @@
 		<div id="theme_circle_3" ></div>
 		<div id="theme_circle_4" ></div>
 	</div>
-	<div id="theme_next">
-		<img class="trans5" id="theme_next_left"  src="img/主题周/未标题-3_0000_左右标.png"/>
-		<img class="trans5" id="theme_next_right" src="img/主题周/未标题-3_0000_左右标.png"/>
-	</div>
 </div>	
 <div id="news" >
 	<img  class="cut" src="img/产品资讯/最新文章和长杠.png">
@@ -107,7 +103,7 @@
 	</div>
 	<div class="news_year"><img src="img/产品资讯/2016-时间轴.png" style="margin:40px 0"></div>
 	<div class="news_month">
-		<div>July</div>
+		<div>JULY</div>
 		<hr class="month_hr">
 		
 		
@@ -262,7 +258,7 @@
 	</div>
 	<div style="height:120px;width:1040px;"></div>
 	<div class="plan2_bottom" style="width:1050px;height:580px;position:relative;">
-		<div style="width:738px;height:426px;"></div>
+		<div style="width:738px;height:426px;"><img src="img/极客计划/all.png"></div>
 		<div style="height:100px;width:311px;"></div>
 		<img style="margin-left:200px;" src="img/极客计划_零件/jike.png"/>
 		<div style="width:311px;height:100px;">
@@ -446,7 +442,7 @@
 		<div id="news2_kong"></div>
 		<div class="news_year"><img src="img/产品资讯/2016-时间轴.png" style="margin:40px 0"></div>
 		<div class="news_month">
-			<div>July</div>
+			<div>JULY</div>
 			<hr class="month_hr">
 			
 		</div>
@@ -682,7 +678,7 @@
 	<div style="width:1050px;height:1000px">
 		<div class="news_year"><img src="img/产品资讯/2016-时间轴.png" style="margin:40px 0"></div>
 		<div class="news_month">
-		<div>July</div>
+		<div>JULY</div>
 			<hr class="month_hr">
 			
 		</div>
@@ -726,7 +722,7 @@
 		</div>
 	</div>
 	<div class="plan2_bottom" style="width:1050px;height:450px;position:relative">
-		<div style="width:738px;height:426px;"></div>
+		<div style="width:738px;height:426px;"><img src="img/极客计划/all.png"></div>
 		<div style="height:100px;width:311px;"></div>
 		<img style="margin-left:200px;" src="img/极客计划_零件/jike.png"/>
 		<div style="width:311px;height:100px;">
