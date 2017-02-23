@@ -1,5 +1,5 @@
 ﻿/*******************初始化操作****************/
-window.onload = function () {
+window.onload=function () {
     check_left();
     //loading去掉，count1出来
     $('#loading').css({'display': 'none'});
@@ -38,33 +38,32 @@ window.onload = function () {
             $('#count1 .plan2_top_ren').css('opacity', '1');
         }
     }
-
-    //60ms之内重复触发不执行，每隔150ms必定执行一次
-    window.onscroll = youhua(scroll, 60, 150);
+	//60ms之内重复触发不执行，每隔150ms必定执行一次
+	window.onscroll=youhua(scroll,60,150);
     changeNav.s1();
-
+	
 }
 
-var youhua = function (fn, delay, mustRunDelay) {
-    var timer = null;
-    var t_start;
-    return function () {
-        var context = this, args = arguments, t_curr = +new Date();
-        clearTimeout(timer);
-        if (!t_start) {
-            t_start = t_curr;
-        }
-        if (t_curr - t_start >= mustRunDelay) {
-            fn.apply(context, args);
-            t_start = t_curr;
-        }
-        else {
-            timer = setTimeout(function () {
-                fn.apply(context, args);
-            }, delay);
-        }
-    };
-};
+var youhua = function(fn, delay, mustRunDelay){
+ 	var timer = null;
+ 	var t_start;
+ 	return function(){
+ 		var context = this, args = arguments, t_curr = +new Date();
+ 		clearTimeout(timer);
+ 		if(!t_start){
+ 			t_start = t_curr;
+ 		}
+ 		if(t_curr - t_start >= mustRunDelay){
+ 			fn.apply(context, args);
+ 			t_start = t_curr;
+ 		}
+ 		else {
+ 			timer = setTimeout(function(){
+ 				fn.apply(context, args);
+ 			}, delay);
+ 		}
+ 	};
+ };
 
 /******上浮字体******/
 function wordFloat(aa, topgo, time) {
@@ -173,7 +172,6 @@ var changeNav = function () {
             plan2_top_ren.animate({'opacity': '1'}, 900);
         }, 900);
     }
-
     return {
         s1: switch1,
         s2: switch2,
@@ -182,7 +180,10 @@ var changeNav = function () {
         s0: switch0
     }
 }()
+
+
 /***********************************************左侧导航栏*************************************************/
+
 /**************给非active的左边导航添加out，over事件***************/
 var left_lead = $("#left_lead");
 left_lead.delegate("div:not(.active)", "mouseenter", function () {
@@ -646,18 +647,6 @@ logo0.mouseleave(function () {
 logo0.click(function () {
     changeNav.s0();
     changeNav.s1();
-    var arrow = $('#arrow');
-    arrow.stop(true, true);
-    arrow.animate({left: 10}, 400);
-    var count1 = $('#count1');
-    //其余消失
-    count1.siblings().each(function () {
-        $(this).css('display', 'none');
-    });
-    count1.stop(true, true);
-    //count1出来
-    count1.css('display', 'block');
-    count1.animate({opacity: 1}, 400);
 });
 
 /***************首页circle****************/
