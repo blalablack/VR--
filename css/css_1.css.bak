@@ -54,7 +54,12 @@ Comment
 .shadow {
     box-shadow: 3px 3px 12px #666;
 }
-
+.trans5{
+	transition: all .5s cubic-bezier(0, 0, .17, 1);
+    -webkit-transition: all .5s cubic-bezier(0, 0, .17, 1);
+    -moz-transition: all .5s cubic-bezier(0, 0, .17, 1);
+    -o-transition: all .5s cubic-bezier(0, 0, .17, 1);
+}
 
 
 .trans7 {
@@ -988,17 +993,7 @@ Comment
     left: 460px;
 }
 
-.news2_down {
-    width: 100%;
-    position: relative;
-}
 
-.news2_down img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    cursor: pointer;
-}
 
 #count2 > hr {
     background-color: #555;

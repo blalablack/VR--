@@ -1,7 +1,4 @@
-﻿/*
-Comment
-*/
-
+﻿
 * {
     margin: 0;
     padding: 0;
@@ -993,17 +990,7 @@ Comment
     left: 460px;
 }
 
-.news2_down {
-    width: 100%;
-    position: relative;
-}
 
-.news2_down img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    cursor: pointer;
-}
 
 #count2 > hr {
     background-color: #555;

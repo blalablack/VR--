@@ -38,7 +38,7 @@ window.onload = function () {
             $('#count1 .plan2_top_ren').css('opacity', '1');
         }
     }
-    switch1();
+    changeNav.s1();
 }
 
 /******上浮字体******/
@@ -50,6 +50,7 @@ function wordFloat(aa, topgo, time) {
 function objBlock(aa) {
     aa.animate({opacity: 1}, 900);
 }
+
 //判断你是否到了要触发动画的点。
 function isShow(aa, height) {
     var b = $(window).scrollTop(); //监控窗口已滚动的距离;
@@ -64,82 +65,111 @@ function isShow(aa, height) {
         return false;
     }
 }
-//----------------------------------------------------------------------------------------------
 
-/*******************导航切换连带效果*************/
-//首页的加载动画
-function switch1() {
-    setTimeout(function () {
-        $('#theme_img').css({'opacity': '1', 'left': '530'});
-    }, 600);
-    setTimeout(function () {
-        $('#theme_word').css('left', '200')
-    }, 900);
-    setTimeout(function () {
-        $('#theme_img1,#theme_img2').css('opacity', '1')
-    }, 1200);
-}
-//产品资讯的加载动画
-function switch2() {
-    setTimeout(function () {
-        $('#news2_title_hr').animate({marginLeft: 0}, 500);
-    }, 600);
-    setTimeout(function () {
-        $('#news2_title_word').animate({marginTop: 0}, 600, 'easeOutBounce');
-    }, 1000);
-}
-//潮品购的加载动画
-function switch3() {
-    setTimeout(function () {
-        $('#shop2_top_img').animate({marginTop: 0}, 1000, 'easeOutElastic');
-    }, 600);
-    setTimeout(function () {
-        $('#shop2_top_word').animate({opacity: 1}, 600);
-    }, 1300);
-}
-//联系我们的加载动画
-function switch4() {
-    setTimeout(function () {
-        $('.plan2_top_ben').css('top', '100');
-    }, 600);
-    setTimeout(function () {
-        $('.plan2_top_men').css('top', '200');
-    }, 600);
-    setTimeout(function () {
-        $('.plan2_top_ren').animate({'opacity': '1'}, 900);
-    }, 900);
-}
-//全部恢复
-function switch0() {
-    $('#theme_img').animate({'opacity': '0', 'left': '730'}, 0);
-    $('#theme_word').animate({'left': '300'}, 0);
-    $('#theme_img1,#theme_img2').animate({'opacity': '0'}, 0);
-    $('#news2_title_hr').stop();
-    $('#news2_title_hr').animate({marginLeft: 80}, 0);
-    $('#news2_title_word').stop();
-    $('#news2_title_word').animate({marginTop: -50}, 0);
-    $('#shop2_top_img').stop();
-    $('#shop2_top_img').animate({marginTop: -80}, 0);
-    $('#shop2_top_word').stop();
-    $('#shop2_top_word').animate({opacity: 0}, 0);
-    $('.plan2_top_ben').animate({'top': '125'}, 0);
-    $('.plan2_top_men').animate({'top': '170'}, 0);
-    $('.plan2_top_ren').stop();
-    $('.plan2_top_ren').animate({'opacity': '0'}, 0);
-}
+/*******************导航切换连带效果********************/
+var changeNav = function () {
+    var theme_img = $('#theme_img');
+    var theme_word = $('#theme_word');
+    var news2_title_hr = $('#news2_title_hr');
+    var news2_title_word = $('#news2_title_word');
+    var shop2_top_img = $('#shop2_top_img');
+    var shop2_top_word = $('#shop2_top_word');
+    var plan2_top_ben = $('.plan2_top_ben');
+    var plan2_top_men = $('.plan2_top_men');
+    var plan2_top_ren = $('.plan2_top_ren');
+    var theme_img1 = $('#theme_img1');
+    var theme_img2 = $('#theme_img2');
+
+    //全部恢复
+    function switch0() {
+        theme_img.animate({'opacity': '0', 'left': '730'}, 0);
+        theme_word.animate({'left': '300'}, 0);
+        theme_img1.animate({'opacity': '0'}, 0);
+        theme_img2.animate({'opacity': '0'}, 0);
+        news2_title_hr.stop();
+        news2_title_hr.animate({marginLeft: 80}, 0);
+        news2_title_word.stop();
+        news2_title_word.animate({marginTop: -50}, 0);
+        shop2_top_img.stop();
+        shop2_top_img.animate({marginTop: -80}, 0);
+        shop2_top_word.stop();
+        shop2_top_word.animate({opacity: 0}, 0);
+        plan2_top_ben.animate({'top': '125'}, 0);
+        plan2_top_men.animate({'top': '170'}, 0);
+        plan2_top_ren.stop();
+        plan2_top_ren.animate({'opacity': '0'}, 0);
+    }
+
+    //首页的加载动画
+    function switch1() {
+        setTimeout(function () {
+            theme_img.css({'opacity': '1', 'left': '530'});
+        }, 600);
+        setTimeout(function () {
+            theme_word.css('left', '200')
+        }, 900);
+        setTimeout(function () {
+            theme_img1.css('opacity', '1');
+            theme_img2.css('opacity', '1');
+        }, 1200);
+    }
+
+    //产品资讯的加载动画
+    function switch2() {
+        setTimeout(function () {
+            news2_title_hr.animate({marginLeft: 0}, 500);
+        }, 600);
+        setTimeout(function () {
+            //弹珠落地的感觉
+            news2_title_word.animate({marginTop: 0}, 600, 'easeOutBounce');
+        }, 1000);
+    }
+
+    //潮品购的加载动画
+    function switch3() {
+        setTimeout(function () {
+            //先到底在上来一点
+            shop2_top_img.animate({marginTop: 0}, 1000, 'easeOutElastic');
+        }, 600);
+        setTimeout(function () {
+            shop2_top_word.animate({opacity: 1}, 600);
+        }, 1300);
+    }
+
+    //联系我们的加载动画
+    function switch4() {
+        setTimeout(function () {
+            plan2_top_ben.css('top', '100');
+        }, 600);
+        setTimeout(function () {
+            plan2_top_men.css('top', '200');
+        }, 600);
+        setTimeout(function () {
+            plan2_top_ren.animate({'opacity': '1'}, 900);
+        }, 900);
+    }
+    return {
+        s1: switch1,
+        s2: switch2,
+        s3: switch3,
+        s4: switch4,
+        s0: switch0
+    }
+}()
 
 
 /***********************************************左侧导航栏*************************************************/
 
 /**************给非active的左边导航添加out，over事件***************/
-$("#left_lead").delegate("div:not(.active)", "mouseenter", function () {
+var left_lead = $("#left_lead");
+left_lead.delegate("div:not(.active)", "mouseenter", function () {
     $(this).css({"background": "rgb(255, 255, 255)", "color": "rgb(17,17,17)"});
 });
-$("#left_lead").delegate("div:not(.active)", "mouseleave", function () {
+left_lead.delegate("div:not(.active)", "mouseleave", function () {
     $(this).css({"background": "", "color": ""});
 });
 /************左边导航栏点击事件*************/
-$("#left_lead").delegate("div", "click", function () {
+left_lead.delegate("div", "click", function () {
     var idName = $(this).attr("id");
     var body = $("body");
     $(this).siblings(".active").removeClass("active");
@@ -174,27 +204,28 @@ var z_plan = $("#z_plan");
 var z_connect = $("#z_connect");
 function check_left() {
     var active = $("#left_lead .active");
+    var body = $('body');
     //按照滚动距离判断到哪了
-    if ($('body').scrollTop() >= 0 && $('body').scrollTop() < 400) {
+    if (body.scrollTop() >= 0 && $('body').scrollTop() < 400) {
         //去除上一个active的active
         active.removeClass("active");
         //为这一次的加active
         z_theme.addClass("active");
     }
-    if ($('body').scrollTop() >= 400 && $('body').scrollTop() < 1800) {
+    if (body.scrollTop() >= 400 && $('body').scrollTop() < 1800) {
         //同上
         active.removeClass("active");
         z_news.addClass("active");
     }
-    if ($('body').scrollTop() >= 1800 && $('body').scrollTop() < 2700) {
+    if (body.scrollTop() >= 1800 && $('body').scrollTop() < 2700) {
         active.removeClass("active");
         z_shop.addClass("active");
     }
-    if ($('body').scrollTop() >= 2700 && $('body').scrollTop() < 4000) {
+    if (body.scrollTop() >= 2700 && $('body').scrollTop() < 4000) {
         active.removeClass("active");
         z_plan.addClass("active");
     }
-    if ($('body').scrollTop() >= 4000 && $('body').scrollTop() < 10000) {
+    if (body.scrollTop() >= 4000 && $('body').scrollTop() < 10000) {
         active.removeClass("active");
         z_connect.addClass("active");
         ;
@@ -236,20 +267,22 @@ $("#top_lead").delegate("h3", "click", function () {
     elem.addClass("active");
     //内容变为透明
     var count = $("#count" + id.slice(id.length - 1))
+    var arrow = $('#arrow');
     count.siblings().each(function () {
         $(this).stop(true, true);
         $(this).animate({"opacity": 0}, 400);
     });
+
     setTimeout(function () {
         //根据id判断到底是那个标题
         if (id == "lead1") {
             //恢复位置
-            switch0();
+            changeNav.s0();
             //动画展示
-            switch1();
+            changeNav.s1();
             //三角图标动画
-            $('#arrow').stop(true, true);
-            $('#arrow').animate({left: 10}, 400);
+            arrow.stop(true, true);
+            arrow.animate({left: 10}, 400);
             var count1 = $('#count1');
             //其余消失
             count1.siblings().each(function () {
@@ -261,12 +294,12 @@ $("#top_lead").delegate("h3", "click", function () {
             count1.animate({opacity: 1}, 400);
         } else if (id == "lead2") {
             //恢复位置
-            switch0();
+            changeNav.s0();
             //动画展示
-            switch2();
+            changeNav.s2();
             //三角图标动画
-            $('#arrow').stop(true, true);
-            $('#arrow').animate({left: 85}, 400);
+            arrow.stop(true, true);
+            arrow.animate({left: 85}, 400);
             var count2 = $('#count2');
             //其余消失
             count2.stop(true, true);
@@ -280,10 +313,10 @@ $("#top_lead").delegate("h3", "click", function () {
         } else if (id == "lead3") {
             //同上
             //恢复位置
-            switch0();
-            switch3();
-            $('#arrow').stop(true, true);
-            $('#arrow').animate({left: 170}, 400);
+            changeNav.s0();
+            changeNav.s3();
+            arrow.stop(true, true);
+            arrow.animate({left: 170}, 400);
             //count3出来
             var count3 = $('#count3');
             count3.stop(true, true);
@@ -295,10 +328,10 @@ $("#top_lead").delegate("h3", "click", function () {
             count3.animate({opacity: 1}, 400);
         } else if (id == "lead4") {
             //恢复位置
-            switch0();
-            switch4();
-            $('#arrow').stop(true, true);
-            $('#arrow').animate({left: 250}, 400);
+            changeNav.s0();
+            changeNav.s4();
+            arrow.stop(true, true);
+            arrow.animate({left: 250}, 400);
             //count4出来
             var count4 = $('#count4');
             count4.stop(true, true);
@@ -309,8 +342,8 @@ $("#top_lead").delegate("h3", "click", function () {
             count4.css('display', 'block');
             count4.animate({opacity: 1}, 400);
         } else {
-            $('#arrow').stop(true, true);
-            $('#arrow').animate({left: 340}, 400);
+            arrow.stop(true, true);
+            arrow.animate({left: 340}, 400);
             //count5出来
             var count5 = $('#count5');
             count5.stop(true, true);
@@ -340,7 +373,6 @@ function i_imgs(elem) {
     elem.prev().prev().stop(true);
     elem.prev().prev().animate({width: 303, left: 0, top: 0}, 300);
 }
-
 $('.div').mouseenter(function (e) {
     var x = parseFloat(e.offsetX);
     var y = parseFloat(e.offsetY) * 1.4;
@@ -463,45 +495,14 @@ $('.divs').mouseleave(function (e) {
     }
 });
 
-/////////////////////////////////////////////////////下滑箭头//////////////////////////////////////////////////////
-function downheightChange() {
-    $('.news2_down').css('height', $(window).height() - 625 + 'px');
-    $('.news2_down img').css({'top': '0', 'bottom': '0', 'margin': 'auto'});
-}
-
-downheightChange();
-$(window).resize(function () {
-    downheightChange();
-    checkFirstDown = 0;
-});
-var checkFirstDown = 0;
-$('.news2_down img').mouseover(function () {
-    $(this).stop(true);
-    if (checkFirstDown == 0) {
-        margintop = $(this).css('margin-top');
-        next = parseFloat(margintop) + 15 + 'px';
-        checkFirstDown = 1;
-    }
-    $(this).animate({'margin-top': margintop}, 200);
-    $(this).animate({'margin-top': next}, 100, 'linear');
-    $(this).animate({'margin-top': margintop}, 600);
-    $(this).animate({'margin-top': next}, 100, 'linear');
-    $(this).animate({'margin-top': margintop}, 600);
-});
-$('.news2_down img').click(function () {
-
-    $(document.body).animate({scrollTop: $(window).height()}, 1000, 'easeOutCirc', function () {
-        lastdd = $('body').scrollTop();
-
-    });
-});
-
 /****************************上部搜索框********************/
-$('.input').focus(function () {
-    $('#search11').css({'top': '29', 'right': '68'});
+var input = $('.input');
+var search11 = $('#search11');
+input.focus(function () {
+    search11.css({'top': '29', 'right': '68'});
 });
-$('.input').blur(function () {
-    $('#search11').css({'top': '25', 'right': '70'});
+input.blur(function () {
+    search11.css({'top': '25', 'right': '70'});
 });
 
 /****************************按钮线圈**********************/
@@ -566,8 +567,8 @@ $('#shop2_middle_fenlei>div').mouseleave(function () {
     $(this).children('.fenlei_word1').attr({'class': 'fenlei_word0 trans5'});
 });
 
-////////////////////////////////////////////////////阅读详情////////////////////////////////////////////////////
-//移入移除变化
+/****************************阅读详情*******************************/
+//移入移除换图片
 $('.day_left>h4>img,.day_right>h4>img').mouseenter(function () {
     $(this).attr('src', 'img/产品资讯/阅读详情2.png');
 });
@@ -603,22 +604,23 @@ function logoOne() {
     }, 1300);
 }
 var interval;
+var logo0 = $('#logo0');
 //over和out事件
 
-$('#logo0').mouseenter(function () {
+logo0.mouseenter(function () {
     //先执行一次
     logoOne();
     //没2秒执行一次像呼吸灯一样
     interval = setInterval(logoOne, 2000);
 });
-$('#logo0').mouseleave(function () {
+logo0.mouseleave(function () {
     clearInterval(interval);
     $('#title_img').css('opacity', '1');
     $('#logo1').css('opacity', '0');
     $('#logo2').css('opacity', '0');
 });
 //click事件，和点击的首页功能一样
-$('#logo0').click(function () {
+logo0.click(function () {
     switch0()
     switch1();
 });
